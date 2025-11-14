@@ -1,17 +1,25 @@
-PerformanceSuite-Windows - Quick Start Guide
+# PerformanceSuite-Windows  
+by Luzifer-Black
 
-1) Installation
-   - Öffne PowerShell als Administrator.
-   - Führe den Installer aus:
-     powershell -ExecutionPolicy Bypass -Command "irm 'https://raw.githubusercontent.com/GitHub-Namen-Angeben/PerformanceSuite-Windows/main/install.ps1' | iex"
+Ein automatisches Windows-Optimierungs-System  
+für Fortnite, SWTOR und alle neuen Spiele.
 
-2) Was passiert:
-   - OpenHardwareMonitor wird heruntergeladen.
-   - Skripte werden in C:\ProgramData\PerformanceSuite-Windows\Scripts angelegt.
-   - AutoUpdate eingerichtet.
-   - Scheduled Task erstellt, startet das Hauptskript beim Login.
+## Installation:
+PowerShell als Administrator öffnen und folgendes ausführen:
 
-3) Hinweise:
-   - MSI Afterburner für Overclocking-Profile (Profile1=default, Profile3=OC) empfohlen.
-   - Lege EmptyStandbyList.exe in das BasePath (optional).
-   - Prüfe Log: C:\ProgramData\PerformanceSuite-Windows\log.txt
+```
+powershell -ExecutionPolicy Bypass -Command "irm 'https://raw.githubusercontent.com/Luzifer-Black/PerformanceSuite-Windows/main/install.ps1' | iex"
+```
+
+## Funktionen:
+- Automatische Spiele-Erkennung
+- Fortnite FPS-Booster
+- SWTOR Optimizer
+- Sichere GPU Overclock-Profile (MSI Afterburner)
+- Ryzen RAM Boost
+- Netzwerk-Latenz Optimierung
+- RAM Cache Reinigung
+- Energiesparplan Umschaltung
+- Temperaturüberwachung (CPU & GPU)
+- Automatische Updates
+- Auto-Start beim Login

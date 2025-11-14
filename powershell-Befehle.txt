@@ -1,0 +1,48 @@
+powershell-Befehle – Strukturierte Übersicht
+
+1) Remote-Installer (One-Liner)
+
+powershell -ExecutionPolicy Bypass -Command “irm
+‘https://raw.githubusercontent.com/Luzifer-Black/PerformanceSuite-Windows/main/install.ps1’
+| iex”
+
+2) Lokale Installation
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force ..ps1
+
+3) Hauptskript manuell starten
+
+powershell -ExecutionPolicy Bypass -File “C:-Windows-Windows.ps1”
+
+4) AutoUpdate testen
+
+powershell -ExecutionPolicy Bypass -File “C:-Windows.ps1”
+
+5) README GUI öffnen
+
+powershell -ExecutionPolicy Bypass -File “C:-Windows.ps1”
+
+6) Logs anzeigen
+
+Get-Content “C:-Windows.txt” -Tail 200 -Wait
+
+7) Scheduled Task entfernen
+
+Unregister-ScheduledTask -TaskName “PerformanceSuite-Windows”
+-Confirm:$false
+
+8) Ordner entfernen (Deinstallation)
+
+Remove-Item -Path “C:-Windows” -Recurse -Force
+
+9) GitHub Upload – Lokales Repo
+
+cd “C:-Windows” git init git add . git commit -m “Initial commit” git
+remote add origin
+https://github.com/Luzifer-Black/PerformanceSuite-Windows.git git branch
+-M main git push -u origin main
+
+10) PS2EXE Installation & EXE-Erstellung
+
+Install-Module -Name ps2exe -Scope CurrentUser -Force Invoke-PS2EXE
+-InputFile “C:.ps1” -OutputFile “C:_PerformanceSuite.exe” -NoConsole
