@@ -3,7 +3,7 @@ PerformanceSuite-Windows - Quick Start Guide
 1) Installation
    - Öffne PowerShell als Administrator.
    - Führe den Installer aus:
-     powershell -ExecutionPolicy Bypass -Command "irm 'https://raw.githubusercontent.com/Luzifer-Black/PerformanceSuite-Windows/main/install.ps1' | iex"
+     powershell -ExecutionPolicy Bypass -Command "irm 'https://raw.githubusercontent.com/GitHub-Namen-Angeben/PerformanceSuite-Windows/main/install.ps1' | iex"
 
 2) Was passiert:
    - OpenHardwareMonitor wird heruntergeladen.
