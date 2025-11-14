@@ -1,2 +1,0 @@
-# PerformanceSuite-Windows
-PerformanceSuite-Windows
